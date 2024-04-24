@@ -1,12 +1,12 @@
-export const ROUTES = {
+export const ROUTES = { // Роуты
   homePage: "/",
   about: "/about",
-  courses: "/courses",
+  films: "/films",
   user: "/user",
-  courseDetails: "/courses/:id",
+  filmDetails: "/films/:id",
 };
 
-export const NAV_ITEMS = [
+export const NAV_ITEMS = [ // Элементы меню-навигации
   {
     title: "Home",
     path: ROUTES.homePage,
@@ -16,7 +16,7 @@ export const NAV_ITEMS = [
     path: ROUTES.about,
   },
   {
-    title: "Courses",
-    path: ROUTES.courses,
+    title: "Films",
+    path: ROUTES.films,
   },
 ];

@@ -1,3 +1,4 @@
+// Кружок загрузки страницы
 export const Loader = () => {
   return (
     <div className="absolute top-0 bottom-0 w-full h-full backdrop-blur-sm flex justify-center align-middle">

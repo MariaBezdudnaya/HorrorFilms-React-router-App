@@ -1,12 +1,13 @@
-import { useAsyncError } from "react-router-dom";
+//Страница с ошибкой:
+import { useAsyncError } from "react-router-dom"; // Возвращает значение отклонения от ближайшего компонента <Await>
 
-const ERROR_CODES = {
+const ERROR_CODES = { // Коды ошибок
   404: "Not found",
   401: "Not allowed",
   500: "Server error",
 };
 
-const errorIcon = (
+const errorIcon = ( // Иконка
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -24,18 +25,18 @@ const errorIcon = (
 );
 
 export const ErrorPage = () => {
-  const error = useAsyncError();
+  const error = useAsyncError(); // Перехватывает ошибки, возвращает значение отклонения от ближайшего компонента <Await>
 
   return (
     <div className="flex flex-col items-center mt-40">
       {errorIcon}
 
       <div className="text-xl font-medium text-slate-700 mb-5">
-        {ERROR_CODES[error?.status]}
+        {ERROR_CODES[error?.status]} {/* Показывает статус ошибки */}
       </div>
 
       {error?.message && (
-        <p className="text-slate-500 text-sm mb-10">{error.message}</p>
+        <p className="text-slate-500 text-sm mb-10">{error.message}</p> // Показывает тип ошибки
       )}
 
       <p className="text-slate-500">Sorry for inconvenience!</p>

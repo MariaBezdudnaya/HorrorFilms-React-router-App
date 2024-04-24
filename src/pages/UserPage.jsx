@@ -1,3 +1,4 @@
+// Страница пользователя:
 export const UserPage = () => {
   return (
     <div className="flex justify-center w-full">
