@@ -6,22 +6,35 @@ import { Loader } from "../components/Loader";
 
 export const filmLoader = ({ params: { id } }) => { // В неё прокидывается объект с params, откуда мы можем достать id
   const film = mockFetch(`/films/${id}`); // Делаем запрос на фильм
+  
   return defer({ // Возвращаем объект с фильмом. Defer - утилита, которая позволяет отложить данные, возвращаемые из лодера, прокидывая промис вместо готовых данных
     film,
   });
 };
 
 export const FilmDirector = () => {
-  const { film } = useLoaderData(); // Вместо компонента передаём функцию. В film приходит промис, который передали пропсу resolve
+  
+  const data = useLoaderData();
+  if (!data) {
+    console.error("useLoaderData()");
+    return;
+  }
+  
+  const { film } = data; // Вместо компонента передаём функцию. В film приходит промис, который передали пропсу resolve
+  // if (!film) {
+  //   console.warn("");
+  //   return;
+  // }
+
   return (
     <Suspense fallback={<Loader />}> 
       {/* Компонент Await используется для рендеринга отложенных данных, прокидывает данные, когда они готовы. Должен быть обёрнут в компонент React.Suspense или React.SuspenseList для использования fallback (колесо загрузки) в случае неуспешной загрузки */}
       <Await resolve={film}> 
-        {({ directedBy }) => ( 
+        {({ directedBy, imageDirector }) => ( 
           <div>
             <img
-              className="w-24 h-25 rounded-full float-left mb-3 mr-10"
-              src="https://i.pravatar.cc/300" // рандомные картинки
+              className="w-24 h-25 rounded float-left mb-3 mr-10"
+              src={ imageDirector } 
               alt="Rounded avatar"
             />
             <div className="content-type mb-1"> Director: { directedBy } </div>

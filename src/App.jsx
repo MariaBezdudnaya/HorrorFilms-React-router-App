@@ -33,8 +33,8 @@ const router = createBrowserRouter( // Используется для акти�
         element={<FilmDetails />} 
         loader={filmLoader}
       >
-        <Route index element={<FilmDirector />} /> {/* Компонент об авторе */}
-        <Route path="critics" element={<FilmCritics />} /> {/* Компонент с критикой фильма */}
+        <Route index element={<FilmDirector />} loader={filmLoader} /> {/* Компонент об авторе */}
+        <Route path="critics" element={<FilmCritics />} loader={filmLoader} /> {/* Компонент с критикой фильма */}
       </Route>
 
       {/* Страница авторизации пользователя */}
