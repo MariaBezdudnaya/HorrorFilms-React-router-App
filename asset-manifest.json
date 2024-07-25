@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/HorrorFilms-React-router-App/static/css/main.d61f3d08.css",
+    "main.js": "/HorrorFilms-React-router-App/static/js/main.8c72c8cb.js",
+    "static/js/590.ad81c18c.chunk.js": "/HorrorFilms-React-router-App/static/js/590.ad81c18c.chunk.js",
+    "reactPlayerPreview.js": "/HorrorFilms-React-router-App/static/js/reactPlayerPreview.c4605ed1.chunk.js",
+    "static/media/3.jpg": "/HorrorFilms-React-router-App/static/media/3.7c4b299e6a6c4fbbfba0.jpg",
+    "static/media/9.jpg": "/HorrorFilms-React-router-App/static/media/9.f0d52e8313b1d16fafae.jpg",
+    "static/media/7.jpg": "/HorrorFilms-React-router-App/static/media/7.e26ae5bea2df26508b11.jpg",
+    "static/media/5.jpg": "/HorrorFilms-React-router-App/static/media/5.ac5c2d9e7fb48d03abcf.jpg",
+    "static/media/4.jpg": "/HorrorFilms-React-router-App/static/media/4.ef596dbe3b0e2db31ee8.jpg",
+    "static/media/6.jpg": "/HorrorFilms-React-router-App/static/media/6.69e5f1f1a9f77bb5753c.jpg",
+    "static/media/bg2.jpg": "/HorrorFilms-React-router-App/static/media/bg2.f602591d3e07e93c65d5.jpg",
+    "static/media/1.jpeg": "/HorrorFilms-React-router-App/static/media/1.b8531e5e05e139d4609d.jpeg",
+    "static/media/2.jpg": "/HorrorFilms-React-router-App/static/media/2.4c9b50f5f49e4af01c41.jpg",
+    "static/media/10.jpg": "/HorrorFilms-React-router-App/static/media/10.749776a5a5673f425df8.jpg",
+    "static/media/about.jpg": "/HorrorFilms-React-router-App/static/media/about.70a3fe9bce4558f4964b.jpg",
+    "static/media/8.jpg": "/HorrorFilms-React-router-App/static/media/8.89ff59880e049d2694e8.jpg",
+    "index.html": "/HorrorFilms-React-router-App/index.html",
+    "main.d61f3d08.css.map": "/HorrorFilms-React-router-App/static/css/main.d61f3d08.css.map",
+    "main.8c72c8cb.js.map": "/HorrorFilms-React-router-App/static/js/main.8c72c8cb.js.map",
+    "590.ad81c18c.chunk.js.map": "/HorrorFilms-React-router-App/static/js/590.ad81c18c.chunk.js.map",
+    "reactPlayerPreview.c4605ed1.chunk.js.map": "/HorrorFilms-React-router-App/static/js/reactPlayerPreview.c4605ed1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d61f3d08.css",
+    "static/js/main.8c72c8cb.js"
+  ]
+}
