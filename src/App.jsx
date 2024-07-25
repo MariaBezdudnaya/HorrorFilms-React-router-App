@@ -9,6 +9,7 @@ import { AboutPage } from "./pages/AboutPage";
 import { FilmDetails, filmLoader } from "./pages/FilmDeatilsPage";
 import { ErrorPage } from "./pages/ErrorPage";
 import { HomePage } from "./pages/HomePage";
+import { FilmShowPage } from "./pages/FilmShowPage";
 import { ROUTES } from "./constants";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import { UserPage } from "./pages/UserPage";
@@ -66,6 +67,8 @@ const router = createBrowserRouter( // Используется для акти�
           </ProtectedRoute>
         }
       />
+
+    <Route path="/film-show/:id" element={<FilmShowPage />} />
 
       {/* Cтраница с ошибкой, если после слэша всякая фигня. "*" означает, что может быть любой путь и любая вложенность */}
       <Route path="*" element={<ErrorPage />} /> 

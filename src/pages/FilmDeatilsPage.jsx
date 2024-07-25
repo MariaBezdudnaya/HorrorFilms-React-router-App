@@ -9,7 +9,7 @@ import { Loader } from "../components/Loader";
 const TABS = [ // Вкладки
   {
     path: "", // Отображается по умолчанию
-    title: "About director", 
+    title: "About Film Director", 
   },
   {
     path: "critics", // Отображается при добавлении во вкладку сегмента critics
@@ -32,25 +32,32 @@ export const FilmDetails = () => {
       {/* Компонент Await используется для рендеринга отложенных данных, прокидывает данные, когда они готовы. Должен быть обёрнут в компонент React.Suspense или React.SuspenseList для использования fallback (колесо загрузки) в случае неуспешной загрузки */}
       <Await resolve={film}> 
         {({ imageUrl, title, year, starring, description }) => ( 
-          <div className="card-container mt-10">
-            <div className="flex flex-col">
-              <div className="w-full"> 
+          <div className="film-details">
+            <div className="film-details_container">
+              <div> 
                 <img 
-                  className="h-[250] w-full object-cover"
+                  className="film-details_image"
                   src={imageUrl}
                   alt="film"
                 /> {/* Картинка фильма */}
               </div>
-              <div className="p-8">
-                <div className="content-type">HORROR FILM</div> {/* Title */}
-                <div className="film-title">{title} ({year})</div> {/* Название фильма и год выпуска */}
-                <p className="mt-2 text-slate-500 mb-6">STARRING: {starring}</p> {/* Описание фильма */}
-                <p className="mt-2 text-slate-500 mb-6">DESCRIPTION: {description}</p> {/* Описание фильма */}
-                <Tabs tabs={TABS} /> {/* Вкладки с дополнительной инфой о фильме */}
-                <Outlet /> {/* Дочерние компоненты Tabs */}
-                <LinkButton to="start-show" title="Start showing" /> {/* Авторизация */}
+              <div className="film-details_content">
+                <div className="film-details_title">HORROR FILM</div> {/* Title */}
+                <div className="film_title">{title} ({year})</div> {/* Название фильма и год выпуска */}
+                <p className="film-details_starring">STARRING: {starring}</p> {/* Описание фильма */}
+                <p className="film-details_descr">DESCRIPTION: {description}</p> {/* Описание фильма */}
+
+                <div className="start-showing">
+                  <LinkButton to="start-show" title="Start showing" /> {/* Авторизация */}
+                </div>
               </div>
             </div>
+
+            <div className="film-details_tabs">
+              <Tabs tabs={TABS} /> {/* Вкладки с дополнительной инфой о фильме */}
+              <Outlet /> {/* Дочерние компоненты Tabs */}
+            </div>
+
           </div>
         )}
       </Await>

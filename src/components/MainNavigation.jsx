@@ -3,12 +3,18 @@ import { NAV_ITEMS } from "../constants";
 
 export const MainNavigation = () => {
   return (
-    <header className="flex justify-start bg-slate-600 p-6 pl-11 text-slate-50 w-full">
-      <nav className="flex">
-        {NAV_ITEMS.map((navItem) => ( // Вкладки меню
-          <div className="px-6" key={navItem.path}>
-            <NavLink className={({isActive}) =>  isActive && "text-red-600 font-bold"} to={navItem.path}>{navItem.title}</NavLink>
-          </div>
+    <header>
+      <nav className="navigation-menu">
+        {NAV_ITEMS.map((navItem) => ( 
+          <NavLink 
+            className={({ isActive }) => 
+              isActive ? "menu-item menu-item_active" : "menu-item"
+            } 
+            key={navItem.path} 
+            to={navItem.path}
+          >
+            {navItem.title}
+          </NavLink>
         ))}
       </nav>
     </header>

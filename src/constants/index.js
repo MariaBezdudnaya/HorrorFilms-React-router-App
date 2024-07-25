@@ -4,6 +4,9 @@ export const ROUTES = { // Роуты
   films: "/films",
   user: "/user",
   filmDetails: "/films/:id",
+  startShow: "/films/:id/start-show",
+  filmShow: "/film-show/:id",
+
 };
 
 export const NAV_ITEMS = [ // Элементы меню-навигации

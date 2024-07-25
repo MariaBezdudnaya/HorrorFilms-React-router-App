@@ -4,33 +4,35 @@ import { ROUTES } from "../constants";
 
 export const FilmCard = ({ imageUrl, title, year, id, description }) => {
   return (
-    <div className="card-container">
-      <div className="md:flex">
-        <div className="md:shrink-0">{/* Картинка */}
+    <div className="card_item">
+      <div className="card-item">
+        <div className="card_image">{/* Картинка */}
           <img 
-            className="h-48 w-full object-cover md:h-full md:w-48"
+            className="card-image"
             src={imageUrl}
             alt="film"
           />
         </div>
-        <div className="p-8">
 
-        <div className="content-type"> {/* title */}
-            Film
+        <div className="card-info">
+          <div className="card-title"> {/* title */}
+              Film
+          </div>
+          <Link to={`${ROUTES.films}/${id}`} className="film-title_link">
+            {title}
+          </Link>
+          <div className="film-year">
+            <Link to={`${ROUTES.films}/${id}`} className="film-year_link">
+              {year}
+            </Link>
+          </div>
         </div>
-        <Link to={`${ROUTES.films}/${id}`} className="film-link">
-          {title}
-        </Link>
-        
-        <Link to={`${ROUTES.films}/${id}`} className="mt-2 text-slate-500">
-          {year}
-        </Link>
 
-          <p className="mt-2 text-slate-500">
-            {description}
-          </p>
-        </div>
+        <p className="card-description">
+          {description}
+        </p>
       </div>
-    </div>
+      <hr style={{opacity: "15%"}}/>
+    </div> 
   );
 };

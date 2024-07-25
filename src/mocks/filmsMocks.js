@@ -19,7 +19,8 @@ export const filmsMocks = [
         imageUrl: img1,
         directedBy: "Colin Cairnes, Cameron Cairnes",
         imageDirector: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7PsayeZJXB4v5y9Z_rWG5nFh9CoNNwmgDAsJteyji4g&s",
-        criticsConsensus: "«Delightfully dark, Late Night with the Devil proves possession horror isn't played out -- and serves as an outstanding showcase for David Dastmalchian.»"
+        criticsConsensus: "«Delightfully dark, Late Night with the Devil proves possession horror isn't played out -- and serves as an outstanding showcase for David Dastmalchian.»",
+        video: "https://youtu.be/TiwvEtimLzQ?si=dOgLJTUC6Cc8Admq"
     },
     {
         id: 1,
@@ -30,7 +31,8 @@ export const filmsMocks = [
         imageUrl: img2,
         directedBy: "Robert Morgan",
         imageDirector: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8VQVpCgWIKiICk2mh9RG8sjzH4Cy3mA98O_aXTynjYg&s",
-        criticsConsensus: "«Stopmotion takes the conflict between art and artist to chilling, visually thrilling extremes, distinguished by director Robert Morgan's excellent effects work.»"
+        criticsConsensus: "«Stopmotion takes the conflict between art and artist to chilling, visually thrilling extremes, distinguished by director Robert Morgan's excellent effects work.»",
+        video: "https://youtu.be/pCXX7EnoWkw?si=vRWuubNTNa9lYdAG"
     },
     {
         id: 2,
@@ -41,7 +43,8 @@ export const filmsMocks = [
         imageUrl: img3,
         directedBy: "Andrew Cumming",
         imageDirector: "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSk8c2GyAsTq41O0L95oDxLzvecB9Zi4hquLnr2nYLqEcUw4t2cT51oT4zkTD-tMy021k6jmt5LZHpu0PE",
-        criticsConsensus: "«A survival thriller reduced to the bare essentials, Out of Darkness offers a chilling reminder that the horror of looming death might be humanity's most universal experience.»"
+        criticsConsensus: "«A survival thriller reduced to the bare essentials, Out of Darkness offers a chilling reminder that the horror of looming death might be humanity's most universal experience.»",
+        video: "https://youtu.be/sU_SQo1wbos?si=vOCjdgpAPP0GKDZv"
     },
     {
         id: 3,
@@ -52,7 +55,8 @@ export const filmsMocks = [
         imageUrl: img4,
         directedBy: "Arkasha Stevenson",
         imageDirector: "https://in.bmscdn.com/artist/arkasha-stevenson-2033287-1704371813.jpg",
-        criticsConsensus: "«Frequently frightening even as it plays within the confines of a nearly 50-year-old film series, this prequel is The First Omen of a bright future for the franchise in quite some time.»"
+        criticsConsensus: "«Frequently frightening even as it plays within the confines of a nearly 50-year-old film series, this prequel is The First Omen of a bright future for the franchise in quite some time.»",
+        video: "https://youtu.be/lmN1Op8ygno?si=z4ibGfWFhUE6z91b"
     },
     {
         id: 4,
@@ -63,18 +67,20 @@ export const filmsMocks = [
         imageUrl: img5,
         directedBy: "Josiah Allen, Indianna Bell",
         imageDirector: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmBFWvRcF6ZFwk6jGgtSxngC3_iSsOnD10MJb3u3vuIw&s",
-        criticsConsensus: "«Visually and sonically distinctive, You'll Never Find Me heightens its spooky atmosphere and claustrophobic setting with a story that'll keep viewers guessing.»"
+        criticsConsensus: "«Visually and sonically distinctive, You'll Never Find Me heightens its spooky atmosphere and claustrophobic setting with a story that'll keep viewers guessing.»",
+        video: "https://youtu.be/y1EHT838rrg?si=LrYWlu5u-Y5sPpNe"
     },
     {
         id: 5,
         title: "DOUBLE BLIND",
-        year: "2023",
+        year: "2024",
         starring: "Millie Brady, Akshay Kumar, Diarmuid Noyes, Pollyanna McIntosh",
         description: "After an experimental drug trial goes awry, the test subjects face a terrifying side effect: if you fall asleep you die. Trapped in an isolated facility, panic ensues as they try to escape and somehow stay awake. If you fall asleep you die.",
         imageUrl: img6,
         directedBy: "Ian Hunt-Duffy",
         imageDirector: "https://m.media-amazon.com/images/M/MV5BMDkwN2Q1OGMtNGYyZi00MWEzLTg0NjItZjJlNTY5ZWU1YTIwXkEyXkFqcGdeQXVyMjIwMjA0NzI@._V1_.jpg",
-        criticsConsensus: "«Double Blind has the kind of plot that is best not to scrutinise in any great detail but in the moment it is credible and intriguing with a strong cast helping to sell the emotional toll of what is unfolding.»"
+        criticsConsensus: "«Double Blind has the kind of plot that is best not to scrutinise in any great detail but in the moment it is credible and intriguing with a strong cast helping to sell the emotional toll of what is unfolding.»",
+        video: "https://youtu.be/xB3lk_KGMNw?si=QOmb-R2xEZQaCiS4"
     },
     {
         id: 6,
@@ -85,7 +91,8 @@ export const filmsMocks = [
         imageUrl: img7,
         directedBy: "Terence Krey",
         imageDirector: "https://images.squarespace-cdn.com/content/v1/5994c542e4fcb5d90b7239e5/1512161320972-SGPS8FF6BGQGFRXEFSZJ/Terence+Krey",
-        criticsConsensus: "«It’s light, but it’s got a heartfelt message of friendship running throughout that bolsters its practical magic personality. Nothing that can quite punch up to the heavy hitters thus far this year or those to come, but a decent choice for a late night grounded and spooky witch tale.»"
+        criticsConsensus: "«It’s light, but it’s got a heartfelt message of friendship running throughout that bolsters its practical magic personality. Nothing that can quite punch up to the heavy hitters thus far this year or those to come, but a decent choice for a late night grounded and spooky witch tale.»",
+        video: "https://youtu.be/lf_EGhRDbWs?si=pYmUz5s0DYwXlUyW"
     },
     {
         id: 7,
@@ -96,8 +103,8 @@ export const filmsMocks = [
         imageUrl: img8,
         directedBy: "Andy Edwards, Airell Anthony Hayles, Ludovica Musumeci, Jake West",
         imageDirector: "https://movingpicturesfilmclub.files.wordpress.com/2022/08/airell.png?w=557",
-        criticsConsensus: "«Midnight Peepshow is an exciting film that plays on human desire. Not only does it toy with the idea of voyeurism but takes that concept to the absolute extreme and is sure to shock the system.»"
-    
+        criticsConsensus: "«Midnight Peepshow is an exciting film that plays on human desire. Not only does it toy with the idea of voyeurism but takes that concept to the absolute extreme and is sure to shock the system.»",
+        video: "https://youtu.be/C0jjfkRfjQs?si=YvezvrdKWlwWejng"
     },
     {
         id: 8,
@@ -108,7 +115,8 @@ export const filmsMocks = [
         imageUrl: img9,
         directedBy: "Olivia West Lloyd",
         imageDirector: "https://media.gettyimages.com/id/1497054482/photo/new-york-new-york-olivia-west-lloyd-attends-somewhere-quiet-premiere-during-the-2023-tribeca.jpg?s=612x612&w=gi&k=20&c=RC5OID7tt2i90TVy2CgQzjObxnGaHSmePsdUjCfmHxg=",
-        criticsConsensus: "No consensus yet."
+        criticsConsensus: "No consensus yet.",
+        video: "https://youtu.be/UynOoH11-Ws?si=RnLSCB4KAx6lzp04"
     },
     {
         id: 9,
@@ -119,6 +127,7 @@ export const filmsMocks = [
         imageUrl: img10,
         directedBy: "Jane Schoenbrun",
         imageDirector: "https://www.hollywoodreporter.com/wp-content/uploads/2022/11/Print-Issue-36C-fea_writing-Schoenbrun-Publicity-EMBED-2022.jpg?w=1000",
-        criticsConsensus: "«With a distinctive visual aesthetic that enhances its emotionally resonant narrative, I Saw the TV Glow further establishes writer-director Jane Schoenbrun as a rising talent.»"
+        criticsConsensus: "«With a distinctive visual aesthetic that enhances its emotionally resonant narrative, I Saw the TV Glow further establishes writer-director Jane Schoenbrun as a rising talent.»",
+        video: "https://youtu.be/B4Dqal9OyPE?si=AY_Gb0KUiezQcDux"
     },
 ]

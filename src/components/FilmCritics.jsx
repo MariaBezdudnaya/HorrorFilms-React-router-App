@@ -26,7 +26,7 @@ export const FilmCritics = () => {
     <Suspense fallback={<Loader />}> 
       <Await resolve={film}>
         {({ criticsConsensus }) => (
-          <p className="text-slate-500 mb-10">
+          <p className="film-critics">
             { criticsConsensus }
           </p>
         )}

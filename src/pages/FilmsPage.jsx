@@ -1,4 +1,4 @@
-// Страница с курсами
+// Страница с фильмами
 import { Suspense, useEffect, useState } from "react";
 import { FilmCard } from "../components/FilmCard";
 import { mockFetch } from "../utils/api";
@@ -45,8 +45,8 @@ export const FilmsPage = () => {
         errorElement={<div>Oops, error while loading films</div>}
       >
         {(films) => (
-          <div className="flex-col">
-            <div className="flex justify-center px-5 py-10">
+          <div className="films_content">
+            <div className="films_foundInput">
               <input
                 type="text"
                 className="search-input"
@@ -62,7 +62,7 @@ export const FilmsPage = () => {
                   <FilmCard key={item.id} {...item} />
                 ))
               ) : (
-                <div className="text-red-900 text-center">Horror is not found</div>
+                <div className="films_foundError">Film is not found...</div>
               )}
             </div>
           </div>
