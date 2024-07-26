@@ -36,7 +36,7 @@ export const FilmsPage = () => {
       }
       return params;
     });
-  }, [search]);
+  }, [search, setSearchParams]);
 
   return (
     <Suspense fallback={<Loader />}>
