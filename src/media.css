@@ -1,0 +1,98 @@
+@media screen and (max-width: 1000px) {
+  .base-layout-menu {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+    font-weight: 900;
+  }
+  .base-layout-menu {
+    width: 70%;
+  }
+  .menu-content {
+    margin-top: -30px;
+  }
+  .film-details_container{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .card-image {
+    width: 300px;
+    object-fit: contain;
+  }
+  .card-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .film-details_container {
+    flex-direction: column;
+  }
+  .film-director_container {
+    align-items: center;
+  }
+  .film-details_image {
+    width: 100%;
+    object-fit: contain;
+  }
+  .film-director_info{
+    margin-left: 12px;
+  }
+  .film-director_image{
+    width: 150px;
+    object-fit: contain;
+    max-height: 200px;
+  }
+  .film-director_name {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .base-layout-menu {
+    width: 80%;
+  }
+  .tabs {
+    margin: 25px 0 0;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .tab-link {
+    flex: 1 1 auto;
+    margin-bottom: 2px;
+  }
+  a.tab-link  {
+    display: block;
+  }
+  .film-director_container {
+    flex-direction: column;
+  }
+  .film-director_image{
+    max-height: 200px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .card-image{
+    width: 200px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  h1 {
+    font-size: 24px;
+  }
+  .homePage-descr {
+    font-size: 18px;
+  }
+  .menu-item {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -4,7 +4,7 @@ import aboutImage from "../assests/images/about.jpg";
 export const AboutPage = () => {
   return (
     <div className="about-content">
-      <h1 className="about-title">About Horror Movie App</h1>
+      <h1 className="about-title">ABOUT HORROR MOVIE APP</h1>
       <img
         className="about-image"
         src={aboutImage}

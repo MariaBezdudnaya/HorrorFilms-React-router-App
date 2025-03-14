@@ -9,7 +9,7 @@ import { Loader } from "../components/Loader";
 const TABS = [ // Вкладки
   {
     path: "", // Отображается по умолчанию
-    title: "About Film Director", 
+    title: "Film Director", 
   },
   {
     path: "critics", // Отображается при добавлении во вкладку сегмента critics
@@ -42,14 +42,10 @@ export const FilmDetails = () => {
                 /> {/* Картинка фильма */}
               </div>
               <div className="film-details_content">
-                <div className="film-details_title">HORROR FILM</div> {/* Title */}
                 <div className="film_title">{title} ({year})</div> {/* Название фильма и год выпуска */}
                 <p className="film-details_starring">STARRING: {starring}</p> {/* Описание фильма */}
                 <p className="film-details_descr">DESCRIPTION: {description}</p> {/* Описание фильма */}
-
-                <div className="start-showing">
-                  <LinkButton to="start-show" title="Start showing" /> {/* Авторизация */}
-                </div>
+                <LinkButton to="start-show" title="Start showing" /> {/* Авторизация */}
               </div>
             </div>
 

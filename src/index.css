@@ -8,27 +8,31 @@ body {
   background-image: url(../public/images/bg2.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position-y: -70px;
-  
+  background-position-y: -5vh;
 }
-
+.base-layout-menu {
+  margin: 0 auto;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 header {
   margin-top: 50px;
-  width: 70vw;
+  width: 100%;
   display: flex;
   justify-content: left;
   align-items: center;
   background-color: #250a0a7a;
 }
-.base-layout-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+h1 {
+  font-size: 32px;
+  font-weight: 900;
 }
 
 /* LinkButton */
 .button {
-  padding: 20px 120px;
+  padding: 2vh 6vw;
   font-size: 20px;
   font-weight: 600;
   color: #030303;
@@ -47,6 +51,7 @@ header {
 .navigation-menu {
   display: flex;
   justify-content: left;
+  flex-wrap: wrap;
 }
 .menu-item {
   padding: 22px 34px;
@@ -74,24 +79,20 @@ a:hover.menu-item {
 }
 
 /* HomePage */
+.menu-content {
+ text-align: center;
+}
 .homePage-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-.homePage-greeting {
-  font-size: 36px;
-  font-weight: 900;
-}
 .homePage-descr {
   font-size: 26px;
 }
 
 /* AboutPage */
-.about-content {
-  width: 70vw;
-}
 .about-title {
   margin: 0 10px 10px;
   font-weight: 600;
@@ -103,7 +104,7 @@ a:hover.menu-item {
 }
 .about-text {
   margin: 20px 10px 0;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 26px;
 }
 .card-container {
@@ -112,11 +113,11 @@ a:hover.menu-item {
 
 /* FilmsPage */
 .films_content {
-  width: 70vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
-.films_foundInput input {
+.films_searchInput input {
   padding: 16px 34px;
   margin-bottom: 20px;
   width: 100%;
@@ -128,7 +129,7 @@ a:hover.menu-item {
 input::placeholder {
   color: #8683834f;
 }
-.films_foundError {
+.films_searchError {
   font-size: 30px;
   margin-left: 34px;
 }
@@ -140,14 +141,14 @@ input::placeholder {
 }
 .card-item {
   display: flex;
-  justify-content: flex-start;
-  padding: 10px 30px; 
+  justify-content: space-between;
+  padding: 10px 0; 
+  gap: 30px;
 }
 .card-image {
   width: 150px;
 }
 .card-info {
-  margin: 0 30px;
   width: 100%;
 }
 .card-title {
@@ -165,7 +166,7 @@ input::placeholder {
   text-decoration: underline;
 }
 .film-year {
-  margin-top: 12px;
+  margin-top: 8px;
 }
 .film-year_link {
   font-size: 20px;
@@ -174,6 +175,7 @@ input::placeholder {
   color: #250a0a;
 }
 .card-description{
+  margin-top: 15px;
   font-size: 20px;
   color: #140505;
   padding-right: 10px;
@@ -182,14 +184,12 @@ input::placeholder {
 
 /* FilmDetailsPage */
 .film-details_container {
-  width: 70vw;
+  width: 100%;
   display: flex;
+  gap: 30px;
 }
 .film-details_image {
-  width: 20vw;
-}
-.film-details_content {
-  padding: 0 40px;
+  height: 400px;
 }
 .film-details_title {
   font-size: 20px;
@@ -207,11 +207,18 @@ input::placeholder {
   color: #140505;
   padding-right: 10px;
   text-align: justify;
+}
+.film-details_starring {
   margin-bottom: 15px;
 }
+.film-details_descr {
+  margin-bottom: 45px;
+}
 .film-details_tabs {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 /* Tabs */
@@ -226,7 +233,7 @@ input::placeholder {
   text-decoration: none;
 }
 a.tab-link  {
-  padding: 20px 50px;
+  padding: 15px 40px;
   font-size: 20px;
   font-weight: 600;
   color: #020202;
@@ -243,7 +250,6 @@ a.tab-link:hover  {
 /* FilmDirector */
 .film-director_container {
   padding: 20px 10px;
-  max-width: 50vw;
   display: flex;
   flex-direction: left;
   margin-bottom: 30px;
@@ -254,7 +260,6 @@ a.tab-link:hover  {
 }
 .film-director_info {
   margin-left: 30px;
-  
 }
 .film-director_name, .film-director_about, .film-critics {
   margin-bottom: 15px;
@@ -265,7 +270,6 @@ a.tab-link:hover  {
 
 /* FilmCritics */
 .film-critics {
-  max-width: 50vw;
   min-height: 200px;
   padding: 30px 20px;
   background-color: #250a0a7a;
@@ -280,13 +284,16 @@ a.tab-link:hover  {
   display: inline-block;
   padding: 16px 34px;
   margin-top: 20px;
-  width: 30vw;
+  width: 100%;
   border: none;
   outline: none;
   background-color: #250a0a7a;
   font-size: 20px;
   transition: 0.3s;
-}        
+} 
+.form-input:hover {
+  background-color: #79606069;
+}       
 .form-input::placeholder {
   color: #ffffff4f;
 }
@@ -298,6 +305,7 @@ a.tab-link:hover  {
 }
 .start-show_form button {
   margin-top: 30px;
+  width: 100%;
 }
 .error-validation {
   margin-top: 8px;

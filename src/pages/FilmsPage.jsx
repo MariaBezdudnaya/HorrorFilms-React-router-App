@@ -46,7 +46,7 @@ export const FilmsPage = () => {
       >
         {(films) => (
           <div className="films_content">
-            <div className="films_foundInput">
+            <div className="films_searchInput">
               <input
                 type="text"
                 className="search-input"
@@ -62,7 +62,7 @@ export const FilmsPage = () => {
                   <FilmCard key={item.id} {...item} />
                 ))
               ) : (
-                <div className="films_foundError">Film is not found...</div>
+                <div className="films_searchError">Film is not found...</div>
               )}
             </div>
           </div>

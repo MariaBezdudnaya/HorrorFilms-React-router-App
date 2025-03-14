@@ -26,14 +26,14 @@ export const FilmShowPage = () => {
 
   return (
     <div className="film-show_page">
-      <h1 class="film-name">{filmDetails.title}</h1>
+      <h1>{filmDetails.title}</h1>
       <p class="film-description">{filmDetails.description}</p>
 
       <p class='trailer'>OFFICIAL TRAILER</p>
       <ReactPlayer 
       light
         url={filmDetails.video}
-        width="50%"
+        width="100%"
         playing
       /> {/* Встраивание видео */}
 

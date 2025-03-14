@@ -26,11 +26,12 @@ export const FilmCard = ({ imageUrl, title, year, id, description }) => {
               {year}
             </Link>
           </div>
+          <p className="card-description">
+            {description}
+          </p>
         </div>
 
-        <p className="card-description">
-          {description}
-        </p>
+
       </div>
       <hr style={{opacity: "15%"}}/>
     </div> 
