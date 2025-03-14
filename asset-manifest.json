@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/HorrorFilms-React-router-App/static/css/main.7a5437f8.css",
-    "main.js": "/HorrorFilms-React-router-App/static/js/main.9e6adb8e.js",
-    "static/js/590.ad81c18c.chunk.js": "/HorrorFilms-React-router-App/static/js/590.ad81c18c.chunk.js",
+    "main.css": "/HorrorFilms-React-router-App/static/css/main.6b1bff99.css",
+    "main.js": "/HorrorFilms-React-router-App/static/js/main.bbd440c0.js",
+    "static/js/590.e54645b5.chunk.js": "/HorrorFilms-React-router-App/static/js/590.e54645b5.chunk.js",
     "reactPlayerPreview.js": "/HorrorFilms-React-router-App/static/js/reactPlayerPreview.c4605ed1.chunk.js",
     "static/media/3.jpg": "/HorrorFilms-React-router-App/static/media/3.7c4b299e6a6c4fbbfba0.jpg",
     "static/media/9.jpg": "/HorrorFilms-React-router-App/static/media/9.f0d52e8313b1d16fafae.jpg",
@@ -17,13 +17,13 @@
     "static/media/about.jpg": "/HorrorFilms-React-router-App/static/media/about.70a3fe9bce4558f4964b.jpg",
     "static/media/8.jpg": "/HorrorFilms-React-router-App/static/media/8.89ff59880e049d2694e8.jpg",
     "index.html": "/HorrorFilms-React-router-App/index.html",
-    "main.7a5437f8.css.map": "/HorrorFilms-React-router-App/static/css/main.7a5437f8.css.map",
-    "main.9e6adb8e.js.map": "/HorrorFilms-React-router-App/static/js/main.9e6adb8e.js.map",
-    "590.ad81c18c.chunk.js.map": "/HorrorFilms-React-router-App/static/js/590.ad81c18c.chunk.js.map",
+    "main.6b1bff99.css.map": "/HorrorFilms-React-router-App/static/css/main.6b1bff99.css.map",
+    "main.bbd440c0.js.map": "/HorrorFilms-React-router-App/static/js/main.bbd440c0.js.map",
+    "590.e54645b5.chunk.js.map": "/HorrorFilms-React-router-App/static/js/590.e54645b5.chunk.js.map",
     "reactPlayerPreview.c4605ed1.chunk.js.map": "/HorrorFilms-React-router-App/static/js/reactPlayerPreview.c4605ed1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a5437f8.css",
-    "static/js/main.9e6adb8e.js"
+    "static/css/main.6b1bff99.css",
+    "static/js/main.bbd440c0.js"
   ]
 }
