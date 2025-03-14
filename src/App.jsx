@@ -61,7 +61,6 @@ const router = createBrowserRouter( // Используется для акти�
       <Route
         path={ROUTES.user}
         element={
-          /* Если isAllowed={true}, то на странице http://192.168.0.101:3000/user будет отображен компонент UserPage */
           <ProtectedRoute isAllowed={false}> 
             <UserPage />
           </ProtectedRoute>
